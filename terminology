@@ -1,0 +1,14 @@
+Abstraction - general model of something
+  i,e, a dog, a house
+
+Primative Data Type - basic data type defined as part of the language
+  int, long, char, double
+
+Abstract Data Type - created by the programmer, composed of one of more data types
+
+Structure - grouping several variables together into a single item
+  tag - the name of the structure
+  members - variable declarations inside the structure
+  dont forget the ;
+  this does not define a variablem it defines a TYPE
+
