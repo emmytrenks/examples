@@ -6,13 +6,13 @@
 struct Game
 {
   // members belonging to the structure
-  string title; // the title of the game
-  string developer; // yada yada
   int playerBase; 
+  std::string title; // the title of the game
+  std::string developer; // yada yada
   int tonysCoolnessFactor;
   
-  string genre;
-  string dateReleased;
+  std::string genre;
+  std::string dateReleased;
 };
 
 #endif
