@@ -11,8 +11,8 @@ struct Game
   std::string developer; // yada yada
   int tonysCoolnessFactor;
   
-  std::string genre;
-  std::string dateReleased;
+  std::string genre; // we will make this an enum later
+  std::string dateReleased; // a string date
 };
 
 #endif
