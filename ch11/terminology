@@ -45,4 +45,22 @@ Pointers to Structures
   there is a shotcut for this
   myPointer->member
 
- 
+Unions
+  Similar to struct but all members share memory space
+  declare using union
+  define variables like you do for struct
+  
+Anonymous unions
+  can refer to members directly without the dot operator
+  
+Enumerated data types
+  enum
+  represent integer constants
+  enum THING { THIS, IS, AN, ENUM };
+    THIS =0, IS = 1 ...
+
+  can also define other than sequential
+  enum THING { THIS = 1, IS, AN = 0, ENUM = 40 };
+  IS becomes the previous value (1) + 1 -> 2
+  
+  must be unique within the scope
