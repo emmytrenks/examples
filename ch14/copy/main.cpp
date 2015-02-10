@@ -10,4 +10,6 @@ int main()
   t2 = t;
 
   std::cout << t2.data << std::endl;
+ 
+  std::cout << t2[3] << std::endl;
 }
