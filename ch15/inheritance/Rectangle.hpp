@@ -15,8 +15,13 @@ std::ostream& operator << (std::ostream& strm, const Rectangle& r);
 
 class Rectangle
 {
+ // these members are truely private to the base class 
  private:
+  
+ // these members will be accessible to derived classes
+   protected:
   double length, width;
+ // these members are public to any class
  public:
   Rectangle() : length(1), width(2) {}
   Rectangle(const double&, const double&);
@@ -30,6 +35,7 @@ class Rectangle
   double getArea() const { return length * width; }
   double getPerimeter() const { return 2 * length + 2 * width; } 
 
+  // this will get bound to any Rectangle* varables 
   virtual std::string getClass() const { return "Rectangle"; } 
 
   friend std::ostream& operator << (std::ostream& strm, const Rectangle& r);
