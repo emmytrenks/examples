@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 
 class Shape;
 
@@ -30,7 +31,8 @@ public:
 std::string Shape::get_info() const
 {
   std::stringstream ss;
-  ss << "[Class: " << get_class() << "]"
+  ss << std::fixed << std::setprecision(5)
+     << "[Class: " << get_class() << "]"
      << "[Area: " << get_area() << "]";
   return ss.str();
 }
